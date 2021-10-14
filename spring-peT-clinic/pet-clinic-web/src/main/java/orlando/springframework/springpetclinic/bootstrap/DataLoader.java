@@ -6,17 +6,15 @@ import orlando.springframework.springpetclinic.model.Owner;
 import orlando.springframework.springpetclinic.model.Vet;
 import orlando.springframework.springpetclinic.services.OwnerService;
 import orlando.springframework.springpetclinic.services.VetService;
-import orlando.springframework.springpetclinic.services.map.OwnerServiceMap;
-import orlando.springframework.springpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
-    public DataLoader() {
-        ownerService=new OwnerServiceMap();
-        vetService=new VetServiceMap();
 
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
