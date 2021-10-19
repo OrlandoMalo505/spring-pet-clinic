@@ -1,0 +1,14 @@
+orlando\springframework\springpetclinic\model\Person.class
+orlando\springframework\springpetclinic\model\BaseEntity.class
+orlando\springframework\springpetclinic\model\Pet.class
+orlando\springframework\springpetclinic\model\PetType.class
+orlando\springframework\springpetclinic\services\map\VetServiceMap.class
+orlando\springframework\springpetclinic\services\map\AbstractMapService.class
+orlando\springframework\springpetclinic\services\PetService.class
+orlando\springframework\springpetclinic\model\Vet.class
+orlando\springframework\springpetclinic\services\map\PetServiceMap.class
+orlando\springframework\springpetclinic\services\map\OwnerServiceMap.class
+orlando\springframework\springpetclinic\services\OwnerService.class
+orlando\springframework\springpetclinic\services\VetService.class
+orlando\springframework\springpetclinic\model\Owner.class
+orlando\springframework\springpetclinic\services\CrudService.class

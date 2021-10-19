@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
+<head>
+    <meta charset="UTF-8">
+    <title>Owner List</title>
+</head>
+<body>
+<!--/*@thymesVar id="owner" type="orlando.springframework.springpetclinic.model.Owner"*/-->
+<h2>Owners</h2>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th style="width: 150px;">ID</th>
+        <th style="width: 150px;">Emri</th>
+        <th style="width: 150px;">Mbiemri</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="owner:${owners}">
+        <td th:text="${owner.id}">1</td>
+        <td th:text="${owner.firstName}">Orlando</td>
+        <td th:text="${owner.lastName}">Malo</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
