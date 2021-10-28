@@ -1,6 +1,5 @@
 package orlando.springframework.springpetclinic.controllers;
 
-import org.springframework.boot.context.properties.bind.BindResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -43,7 +42,7 @@ public class OwnerController {
             owner.setLastName("");
         }
 
-        List<Owner> results=ownerService.findAllByLastNameLike(owner.getLastName());
+        List<Owner> results=ownerService.findAllByLastNameLike("%"+owner.getLastName()+"%");
 
         if(results.isEmpty()){
             result.rejectValue("lastName","notFound","not found");
