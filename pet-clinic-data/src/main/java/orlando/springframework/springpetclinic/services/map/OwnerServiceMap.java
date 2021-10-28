@@ -8,6 +8,7 @@ import orlando.springframework.springpetclinic.services.OwnerService;
 import orlando.springframework.springpetclinic.services.PetService;
 import orlando.springframework.springpetclinic.services.PetTypeService;
 
+import java.util.List;
 import java.util.Set;
 @Service
 @Profile({"default","map"})
@@ -75,5 +76,11 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements O
                 .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+
+        return null;
     }
 }
